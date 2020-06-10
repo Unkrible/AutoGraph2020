@@ -1,3 +1,5 @@
+[![license](https://img.shields.io/badge/license-GPL%203.0-green.svg)](https://github.com/Unkrible/AutoGraph2020/blob/master/LICENSE)
+
 AutoGraph
 ======================================
 
