@@ -1,0 +1,25 @@
+{
+  "model": [
+    "nas_azpo"
+  ],
+  "model_config": {
+    "nas_autograph_c": {
+      "lr": 0.0005,
+      "dropout": 0.8,
+      "weight_decay": 1e-05,
+      "hidden": 256
+    }
+  },
+  "num_epoch": 500,
+  "num_batch": 1,
+  "patience": 30,
+  "use_valid": true,
+  "use_all_data": false,
+  "lr": 0.005,
+  "drop_edge": 1.0,
+  "weight_decay": 5e-4,
+  "dropout": 0.5,
+  "hidden": 64,
+  "num_layers": 2,
+  "min_epoch": 1
+}

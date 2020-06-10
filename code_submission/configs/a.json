@@ -1,0 +1,62 @@
+{
+  "model": [
+    "nas_cora",
+    "nas_autograph_a",
+    "nas_autograph_c",
+    "gat",
+    "nas_pubmed",
+    "simple_gcn",
+    "nas_autograph_b",
+    "nas_autograph_e"
+  ],
+  "model_config": {
+    "simple_gcn": {
+      "num_layers": 3,
+      "drop_edge": 0.8
+    },
+    "gat": {
+      "num_layers": 3
+    },
+    "nas_pubmed": {
+      "num_layers": 1
+    },
+    "nas_autograph_a": {
+      "lr": 0.01,
+      "dropout": 0.9,
+      "weight_decay": 0,
+      "hidden": 128
+    },
+    "nas_autograph_b": {
+      "lr": 0.001,
+      "dropout": 0.7,
+      "weight_decay": 0,
+      "hidden": 256
+    },
+    "nas_autograph_d": {
+      "lr": 0.005,
+      "dropout": 0.1,
+      "weight_decay": 0.001,
+      "hidden": 8
+    },
+    "nas_autograph_e": {
+      "lr": 0.005,
+      "dropout": 0.7,
+      "weight_decay": 0.0001,
+      "hidden": 32
+    }
+  },
+  "num_epoch": 500,
+  "num_batch": 1,
+  "patience": 30,
+  "use_valid": true,
+  "use_all_data": false,
+  "lr": 0.005,
+  "drop_edge": 1.0,
+  "weight_decay": 5e-4,
+  "dropout": 0.5,
+  "hidden": 64,
+  "use_sampler": false,
+  "num_layers": 1,
+  "min_epoch": 1,
+  "loop": true
+}

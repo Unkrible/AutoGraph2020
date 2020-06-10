@@ -1,0 +1,7 @@
+.idea/
+ingestion/ingestion.py
+data/
+__pycache__
+.DS_Store
+*.zip
+

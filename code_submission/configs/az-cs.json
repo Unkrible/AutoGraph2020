@@ -1,0 +1,38 @@
+{
+  "model": [
+    "nas_citeseer",
+    "gat",
+    "nas_cora",
+    "nas_pubmed",
+    "nas_autograph_e",
+    "nas_azpo"
+  ],
+  "model_config": {
+    "nas_cora":{
+      "num_layers": 1,
+      "patience": 15
+    },
+    "nas_citeseer": {
+      "num_layers": 1,
+      "patience": 15
+    },
+    "nas_pubmed": {
+      "num_layers": 1,
+      "patience": 15
+    }
+  },
+  "num_epoch": 500,
+  "num_batch": 1,
+  "patience": 30,
+  "use_valid": false,
+  "use_all_data": false,
+  "lr": 0.005,
+  "drop_edge": 1.0,
+  "weight_decay": 5e-4,
+  "dropout": 0.5,
+  "hidden": 64,
+  "use_sampler": true,
+  "num_layers": 1,
+  "min_epoch": 1,
+  "loop": true
+}
