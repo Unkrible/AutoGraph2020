@@ -1,16 +1,20 @@
 AutoGraph
 ======================================
 
+
+
 ## Contents
-ingestion/: The code and libraries used on Codalab to run your submmission.
 
-scoring/: The code and libraries used on Codalab to score your submmission.
+- ingestion/: The code and libraries used on Codalab to run your submmission.
 
-code_submission/: An example of code submission you can use as template.
+- scoring/: The code and libraries used on Codalab to score your submmission.
 
-data/: Some sample data to test your code before you submit it.
+- code_submission/: An example of code submission you can use as template.
 
-run_local_test.py: A python script to simulate the runtime in codalab
+- data/: Some sample data to test your code before you submit it.
+- Meta.encoder: A decision tree for adaptive configuration of hyperparameters![WechatIMG22352](asserts/WechatIMG22352.png)
+
+
 
 ## Local development and testing
 1. To make your own submission to AutoGraph challenge, you need to modify the
@@ -51,32 +55,16 @@ python run_local_test.py --dataset_dir=./data/demo --code_dir=./code_submission
 You can change the argument `dataset_dir` to other datasets (e.g. the two
 practice datasets we provide). On the other hand, you can also modify the directory containing your other sample code.
 
-## Download practice datasets
-We provide 3 practice datasets for participants. They can use these datasets to:
-1. Do local test for their own algorithm;
-2. Enable meta-learning.
+5. You can directly use `sh ./meta_run.sh log_folder run_times [dataset1, dataset2, ...]` to run our programs in batch.
 
-You may refer to [challenge site](https://www.automl.ai/competitions/3) for public datasets.
 
-Unzip the zip file and you'll get datasets.
 
-## Prepare a ZIP file for submission on CodaLab
-Zip the contents of `code_submission`(or any folder containing
-your `model.py` file) without the directory structure:
-```
-cd code_submission/
-zip -r mysubmission.zip *
-```
-then use the "Upload a Submission" button to make a submission to the
-competition page on challenge platform.
+##  Contributor
 
-Tip: to look at what's in your submission zip file without unzipping it, you
-can do
-```
-unzip -l mysubmission.zip
-```
 
-## Report bugs and create issues
 
-If you run into bugs or issues when using this starting kit, please please contact us via:
-<autograph2020@4paradigm.com>
+- Zhuoer Xu, NJU, [xuzhuoer.rex@gmail.com](mailto:xuzhuoer.rex@gmail.com)
+
+- Feng Cheng, NJU, [hazzacheng@gmail.com](mailto:hazzacheng@gmail.com)
+- Wenjie Wang, NJU, [wjwangpt@gmail.com](mailto:wjwangpt@gmail.com)
+- Mengchuan Qiu, NJU, [mecthew.qiu@gmail.com](mailto:mecthew.qiu@gmail.com)
