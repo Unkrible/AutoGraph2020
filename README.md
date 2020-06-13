@@ -14,7 +14,7 @@ AutoGraph
 - code_submission/: An example of code submission you can use as template.
 
 - data/: Some sample data to test your code before you submit it.
-- Meta.encoder: A decision tree for adaptive configuration of hyperparameters![WechatIMG22352](asserts/WechatIMG22352.png)
+- Meta.model: A decision tree for adaptive configuration of hyperparameters![WechatIMG22352](asserts/WechatIMG22352.png)
 - [Extra Dataset used in competition](https://github.com/mecthew/Graph-Dataset)
 
 
